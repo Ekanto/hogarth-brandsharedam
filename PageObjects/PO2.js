@@ -33,6 +33,9 @@ class PO2{
         await this.page.getByLabel('Save').nth(1).click();
         await this.page.getByRole('button', { name: 'close' }).nth(2).click();
     }
+    async verifyUpdate(){
+        await expect(await this.page.locator(this.pageObject.updatePopUp), 'Title update pop-up').toBeVisible();
+    }
 
 
 }
