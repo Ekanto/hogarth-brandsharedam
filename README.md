@@ -37,6 +37,13 @@ In the project root directory -
 - It will run all the tests in the command line
 - You should be able to see the following information when all the tests are successfully passed
 ![My Image](Resources/CMD1.png)
+- It should generate a build-in HTML report. To generate, run -
+  ```
+  allure open ./allure-report
+And it should be something like that
+
+
+  
 
 **Using the command line with test report -**
 
