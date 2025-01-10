@@ -36,7 +36,7 @@ In the project root directory -
 - Type `npm run test:custom`
 - It will run all the tests in the command line
 - You should be able to see the following information when all the tests are successfully passed
-![My Image](RESOURCES/cmd1.png)
+![My Image](RESOURCES/CMD1.png)
 
 **Using the command line with test report -**
 
