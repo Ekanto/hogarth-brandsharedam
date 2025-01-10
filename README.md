@@ -41,6 +41,7 @@ In the project root directory -
   ```
   allure open ./allure-report
 And it should be something like that
+![My Image](Resources/CMD2.png)
 
 
   
