@@ -21,7 +21,7 @@ This project covers an End-to-end(e2e) automation task for Hogarth Dhaka. We hav
 ## Installation
 1. Clone the repo:
    ```sh
-   [https://github.com/Ekanto/transmedia_qa-automation-home-assignment.git]
+   https://github.com/Ekanto/transmedia_qa-automation-home-assignment.git
 
 2. Navigate to the project directory:
    ```sh
