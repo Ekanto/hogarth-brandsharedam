@@ -41,9 +41,9 @@ In the project root directory -
 **Using the command line with test report -**
 
 This project includes a reporting tool **Allure Report** which helps visualize the test result better. To run all the tests generating a report - 
-- Type `npm run e2e-regression-allure`
+- Type `allure generate ./allure-results -o ./allure-report --clean`
 - It should run all the tests as before but it will generate some results in the `./allure-results` folder
-- After completion of this command, now run `npm run e2e-regression-allure-report`
+- After completion of this command, now run `allure open ./allure-report`
 - It will invoke a browser and you should see all the tests result in your browser better!
 ![My Image](Resources/allure.png)
 
