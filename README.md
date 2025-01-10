@@ -36,7 +36,7 @@ In the project root directory -
 - Type `npm run test:custom`
 - It will run all the tests in the command line
 - You should be able to see the following information when all the tests are successfully passed
-![My Image](RESOURCES/CMD1.png)
+![My Image](Resources/CMD1.png)
 
 **Using the command line with test report -**
 
@@ -45,7 +45,7 @@ This project includes a reporting tool **Allure Report** which helps visualize t
 - It should run all the tests as before but it will generate some results in the `./allure-results` folder
 - After completion of this command, now run `npm run e2e-regression-allure-report`
 - It will invoke a browser and you should see all the tests result in your browser better!
-![My Image](RESOURCES/allure.png)
+![My Image](Resources/allure.png)
 
 ## Contact 
 
