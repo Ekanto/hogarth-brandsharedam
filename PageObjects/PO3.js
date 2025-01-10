@@ -17,11 +17,11 @@ class PO3 {
   }
   async clickOnDam() {
     await this.page
-      .locator(`#${this.pageObject.damBtnId}`, { timeout: 5000 })
+      .locator(this.pageObject.damBtnId)
       .click();
   }
   async clickOnAssets() {
-    await this.page.locator(`#${this.pageObject.assetsBtnId}`).click();
+    await this.page.locator(this.pageObject.assetsBtnId).click();
   }
 
   async selectElement() {
@@ -30,19 +30,11 @@ class PO3 {
       .locator("span")
       .click();
     await this.page.getByLabel("Share").click();
-    await this.page
-      .locator("div")
-      .filter({ hasText: /^Please Select$/ })
-      .nth(2)
-      .click();
-    await this.page
-      .locator("div")
-      .filter({ hasText: /^Please Select$/ })
-      .nth(2)
-      .type("sing-past@ahvoe1nr.mailosaur.net");
-    await this.page
-      .getByText('Create "sing-past@ahvoe1nr.mailosaur.net"', { exact: true })
-      .click();
+    await this.page.waitForTimeout(2000);
+    await this.page.locator('div').filter({ hasText: /^Please Select$/ }).nth(2).click();
+    await this.page.locator('div').filter({ hasText: /^Please Select$/ }).nth(2).type('sing-past@ahvoe1nr.mailosaur.net')
+    await this.page.waitForTimeout(2000);
+    await this.page.getByText('Create "sing-past@ahvoe1nr.mailosaur.net"', { exact: true }).click();
     await this.page.locator('button:has-text("Send")').click();
   }
 }

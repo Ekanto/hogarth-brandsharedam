@@ -19,10 +19,10 @@ class PO2{
       }
 
     async clickOnDam() {
-        await this.page.locator(`#${this.pageObject.damBtnId}`, {timeout: 5000}).click();
+        await this.page.locator(this.pageObject.damBtnId).click();
     }
     async clickOnAssets() {
-        await this.page.locator(`#${this.pageObject.assetsBtnId}`).click();
+        await this.page.locator(this.pageObject.assetsBtnId).click();
       }
     async openFile(){
         await this.page.getByText('sample.png').click();

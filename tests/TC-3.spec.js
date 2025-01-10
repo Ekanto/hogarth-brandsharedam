@@ -19,6 +19,7 @@ test('Verify I recived the download link in email', async({page}) => {
     });
 
     const emailBodyLink = email.html.links[0].href;
+    console.log(emailBodyLink);
     expect(emailBodyLink, 'Verify I have the download link').toContain('https://qaautomation.brandsharedam.com')
 
 

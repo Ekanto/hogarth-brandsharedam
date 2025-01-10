@@ -4,8 +4,8 @@ class Locators {
     this.URL = "https://qaautomation.brandsharedam.com/";
     this.userMail = "sash.dqa@gmail.com"
     this.password = "Omar1234"
-    this.damBtnId = "menu-button-11"
-    this.assetsBtnId = "menu-list-11-menuitem-8"
+    this.damBtnId = "[title='DAM']"
+    this.assetsBtnId = 'button:has-text("Assets")'
     this.uploadBtnId = "New Item"
     this.uploadFieldText = "Drag and drop files here,or"
     this.titleField = "textbox"

@@ -17,10 +17,10 @@ class PO1 {
     await this.page.locator("button[type='submit']").click();
   }
   async clickOnDam() {
-    await this.page.locator(`#${this.pageObject.damBtnId}`, {timeout: 5000}).click();
+    await this.page.locator(this.pageObject.damBtnId).click();
   }
   async clickOnAssets() {
-    await this.page.locator(`#${this.pageObject.assetsBtnId}`).click();
+    await this.page.locator(this.pageObject.assetsBtnId).click();
   }
   async clickOnUpload() {
     await this.page.getByLabel('New Item').click();
@@ -30,13 +30,13 @@ class PO1 {
     await this.page.getByRole(this.pageObject.titleField).fill('QA Automation Engineer');
     await this.page.locator(this.pageObject.dropDown).click();
     await this.page.getByText('Image', { exact: true}).click();
-    await this.page.waitForTimeout(2000);
+    // await this.page.waitForTimeout(2000);
     await this.page.locator('button:has-text("Save")').click();
   }
 
   async verifyImage(){
-    //await expect(await this.page.locator('img[alt="QA Automation Engineer"]').isVisible()).toBeTruthy();
-    await expect(await this.page.getByText('sample.png')).toBeVisible(); 
+    await expect(await this.page.getByText('sample.png'), 'Verify the upload is visible').toBeVisible();
+    await this.page.waitForTimeout(5000); 
   }
 
 

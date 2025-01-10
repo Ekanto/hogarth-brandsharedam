@@ -2,7 +2,11 @@
   "name": "hogarth-brandsharedam",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:custom": "node run-tests.js"
+
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
